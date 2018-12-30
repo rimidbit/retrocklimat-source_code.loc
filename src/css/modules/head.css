@@ -1,0 +1,144 @@
+.head__top-line{
+    background-color: #f9f9f9;
+    min-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.head__top-line__delivery, .head__top-line__email, .head__top-line__login, .head__top-line__working-hours, .head__top-line__search{
+    display: flex;
+    align-items: center;
+}
+
+.head__top-line__icon{
+    fill: #2e6ed5;
+    margin-right: 5px;
+}
+/*
+.header__top-line__form-search{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 5px;
+    border: 1px solid #cecece;
+}
+
+.head__top-line__form-input{
+    flex-grow: 1;
+    border: thin solid #cecece;
+    border-right: none;
+}
+
+.head__top-line__button{
+    padding: 0 25px;
+    height: 35px;
+    background-color: #f4f4f4;
+    border: thin solid #cecece;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}*/
+
+/*top-line end*/
+
+.head__general{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head__general__nav{
+    display: flex;
+}
+
+.head__general__cart a{
+    display: flex;
+    background-color: #f26522;
+    padding: 10px;
+}
+
+.head__general__cart__text{
+    margin: 0 10px;
+}
+
+.head__general__cart__text span{
+    display: block;
+    color: #ffffff;
+}
+
+.head__general__src-like, .head__general__src-line-chart{
+    margin-left: 5px;
+}
+
+.head__general__icons{
+    display: flex;
+}
+
+.head__general__like{
+    font-size: 2em;
+    fill: #2e6ed5;
+}
+
+.head__general__src-like{
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+
+.head__general__line-chart{
+    font-size: 2em;
+    fill: #f26522;
+}
+
+.head__general__src-line-chart{
+    background-color: #e8e8e8;
+    padding: 10px;
+}
+
+.head__general__call-my a {
+    background-color: #2e6ed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.head__general__call-my__text{
+    color: #ffffff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+/*head__general end*/
+
+.nav{
+    background-color: #2e6ed5;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0;
+    z-index: 10;
+}
+
+.nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.head__bread-crumbs{
+    background-color: #fafafa;
+    padding: 40px 0 15px;
+    margin-top: -25px;
+}
+
+.head__bread-crumbs__icon{
+    fill: #f26522;
+    margin-right: 5px;
+}
+
+.head__bread-crumbs a, .head__bread-crumbs span{
+    color: #f26522;
+}
+
+/*head end*/

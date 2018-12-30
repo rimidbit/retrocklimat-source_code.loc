@@ -1,0 +1,38 @@
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #222222;
+    padding: 40px 0 10px 0;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.footer__nav ul li a, .footer__conditioners ul li a{
+    color: #888888;
+}
+
+.footer__conditioners{
+    margin-left: 25px;
+}
+
+.footer__contacts{
+    margin-left: 100px;
+}
+
+.footer__call-my{
+    margin-top: 15px;
+}
+
+.footer__call-my a {
+    background-color: #2e6ed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.footer__call-my__text{
+    color: #ffffff;
+    margin-left: 15px;
+    font-weight: bold;
+}

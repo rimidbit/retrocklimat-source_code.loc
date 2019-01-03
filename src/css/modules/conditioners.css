@@ -1,3 +1,11 @@
+.main__head{
+    text-align: center;
+    font-weight: 900;
+    font-size: 36px;
+    text-transform: uppercase;
+    color:black;
+}
+
 .main__conditioners-categories{
     display: flex;
     justify-content: center;
@@ -40,11 +48,7 @@
     border: 1px solid #bcbcbc;
     padding: 10px;
     margin: 10px;
-    flex-basis: calc(20%);
-}
-
-.main__prise-item img{
-    width: 250px;
+    flex-basis: 23%;
 }
 
 .main__prise-more{
@@ -62,18 +66,95 @@
     border: 1px solid #f26522;
 }
 
-/*main__prise end*/
-
-.main__hits{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
+.main__prise-item__category{
+    color: #939393;
+    display: block;
+    margin: 5px 0;
 }
+
+.main__prise-item__name{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main__prise-item__prise{
+    color: #f26522;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 25px;
+    display: block;
+}
+
+.main__prise-item__buttons{
+    margin-top: 15px;
+    display: flex;
+}
+
+.main__prise-item__buttons button{
+    background-color: #2e6ed5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main__prise-item__buttons button img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.main__prise-item__buttons span{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.main__prise-item__src-like, .main__prise-item__src-line-chart{
+    margin-left: 5px;
+}
+.main__prise-item__icons{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.main__prise-item__src-line-chart, .main__prise-item__src-like{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    border-radius: 5px;
+}
+
+.main__prise-item__like, .main__prise-item__line-chart{
+    margin: 0 5px;
+}
+
+.main__prise-item__like{
+    fill: #2e6ed5;
+}
+.main__prise-item__src-like{
+    background-color: #e8e8e8;
+    padding: 5px;
+}
+.main__prise-item__line-chart{
+    fill: #f26522;
+}
+.main__prise-item__src-line-chart{
+    background-color: #e8e8e8;
+    padding: 5px;
+}
+
+/*main__prise end*/
 
 .main__hits h3{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .main__hits__items{

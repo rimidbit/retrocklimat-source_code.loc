@@ -7,6 +7,13 @@
     margin-top: 25px;
     position: relative;
 }
+
+.footer__general{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
 /*
 .footer:after{
     content: "";
@@ -31,7 +38,6 @@
 }
 .footer__nav ul li a, .footer__conditioners ul li a{
     color: #888888;
-    font-size: 0.8em;
     padding: 5px 0;
     display: block;
     text-decoration: none;
@@ -42,7 +48,7 @@
 }
 
 .footer__contacts{
-    margin-left: 100px;
+    margin-left: 200px;
 }
 
 .footer__contacts__phone{
@@ -77,6 +83,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    min-width: 1070px;
 }
 
 .footer__base small{

@@ -1,0 +1,285 @@
+.card-product__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.card-product__img-mini{
+    margin: 0 -6px;
+}
+
+.card-product__img-mini img{
+    border: 1px solid #bcbcbc;
+    margin: 0 6px;
+}
+
+.card-product__img-mini img:last-child{
+    border: 1px solid #f26522;
+}
+
+.card-product_order, .card-product__description{
+    padding-top: 10px;
+}
+
+.card-product_order-brand{
+    color: #00215e;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.card-product_order span{
+    display: block;
+}
+
+.card-product_order-system{
+    color: #7a7a7a;
+    margin-top: 10px;
+}
+
+.card-product_order-name{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.card-product_order-prise{
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-product_order-prise-item{
+    color: #f26522;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card-product_order-prise-code{
+    background-color: #f8f8f8;
+    padding: 5px 5px;
+}
+
+.card-product_order-checkbox input{
+    margin-bottom: 25px;
+}
+
+.card-product_order-button{
+    display: block;
+    background-color: #f26522;
+    padding: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 10px;
+}
+
+.card-product_order__call-my{
+    color: #2e6ed5;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.card-product_order__button-icon{
+    fill: #2e6ed5;
+    margin-right: 5px;
+    font-size: 1.2em;
+}
+
+.card-product__description-recall__head{
+    color: #30c542;
+}
+
+.card-product__description__icon{
+    fill: #30c542;
+    margin-right: 5px;
+}
+
+.card-product__description-recall{
+    padding: 10px 0;
+}
+
+.card-product__description-recall__icon{
+    fill: #f26522;
+}
+
+.card-product__description-recall__icon:last-child{
+    fill: #f8f8f8;
+}
+
+.card-product__description-recall a{
+    color: #2e6ed5;
+    margin-left: 10px;
+}
+
+.card-product__h2{
+    margin: 10px 0;
+    font-weight: bold;
+    border-top: 1px solid #d9d9d9;
+    padding-top: 10px;
+}
+
+.characteristic-element{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.characteristic__item{
+    display: block;
+    color: #7a7a7a;
+    margin-right: 15px;
+}
+
+.characteristic__value{
+    color: #000;
+    text-align: right;
+    font-weight: bold;
+}
+
+.description__certificate-item{
+    display: flex;
+    margin: 10px 0;
+}
+
+.description__certificate-item p{
+    color: #7a7a7a;
+}
+
+.description__certificate-text__black{
+    color: #000;
+    font-weight: bold;
+}
+
+.description__certificate-text__blue{
+    font-weight: bold;
+    color: #2e6ed5;
+}
+
+.description__certificate__icon{
+    fill: #f26522;
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+.card-product__description__certificate-text a{
+    color: #f26522;
+}
+
+.card-product__description__certificate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.description__certificate-img{
+    max-height: 120px;
+    margin-left: 10px;
+}
+
+/*card-product-general end*/
+
+.card-product__menu{
+    background-color: #2e6ed5;
+    display: flex;
+    justify-content: space-around;
+    margin: 40px 0 20px 0;
+}
+
+.card-product__menu a{
+    color: #ffffff;
+    padding: 20px 45px;
+    font-size: 1.2em;
+}
+
+.card-product__menu a:first-child{
+    color: #2e6ed5;
+    background-color: #fff;
+    border-top: 1px solid #2e6ed5;
+}
+
+/*card-product__menu end*/
+
+.card-product__specification{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-product__specification-h2{
+    border-top: none;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.card-product__specification-element{
+    border: 1px solid #d9d9d9;
+    padding: 0 20px 20px 0;
+    margin-bottom: 30px;
+}
+
+.card-product__specification-element p{
+    color: #7a7a7a;
+    margin: 0 20px;
+}
+
+.card-product__specification-element__grade samp{
+    color: #d9d9d9;
+    padding-left: 10px;
+    display: block;
+}
+
+.specification-element__grade__items{
+    display: flex;
+    margin-top: 10px;
+}
+
+.specification-element__grade__item{
+    padding: 0 10px;
+    border-right: 1px solid #d9d9d9;
+}
+
+.specification-element__grade__icon{
+    fill: #d9d9d9;
+}
+
+.specification-element__grade__icon__good{
+    fill: #f26522
+}
+
+.specification-element__grade-form{
+    margin: 10px;
+}
+
+.specification-element__grade-form input, .specification-element__grade-form textarea{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.specification-element__grade-form table{
+    color: #d9d9d9;
+    margin-bottom: 5px;
+}
+
+.specification-element__grade-form button{
+    background-color: #fff;
+    color: #f26522;
+    border: 1px solid #f26522;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+
+/*form end*/
+
+.card-product-h3{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+}

@@ -180,10 +180,11 @@ header>nav
 .head__bread-crumbs{
     background-color: #fafafa;
     padding: 40px 0 15px;
-    margin-top: -25px;
+    margin-top: -15px;
 }
 .head__bread-crumbs__icon{
     margin-right: 5px;
+    fill: #f26522 !important;
 }
 .head__bread-crumbs a, .head__bread-crumbs span{
     color: #f26522;

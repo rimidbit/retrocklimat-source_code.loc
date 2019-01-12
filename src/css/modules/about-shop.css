@@ -1,0 +1,44 @@
+.main__about-shop__item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__about-shop__item img{
+    height: 250px;
+}
+
+.main__about-shop__item-img{
+    margin-right: 20px;
+    border-top: 2px solid #2e6ed5;
+}
+
+.main__about-shop__item-down{
+    order: -1;
+    margin-left: 20px;
+    border-bottom: 2px solid #2e6ed5;
+}
+
+.main__about-shop__item-text-down{
+    order: 1;
+}
+
+.main__about-shop__item-text p, .main__about-shop__item-text-down p{
+    padding-top: 20px;
+    color: #2c3138;
+}
+
+.main__about-shop-h2{
+    font-weight: bold;
+    padding: 20px 0 10px 0;
+    border-top: 1px solid #d9d9d9;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+.main__about-shop-advantages li{
+    color: #7a7a7a;
+}
+
+.main__about-shop-advantages{
+    margin-bottom: 40px;
+}

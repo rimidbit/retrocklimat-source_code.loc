@@ -1,0 +1,72 @@
+.main__h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    padding: 30px 0;
+    text-transform: uppercase;
+}
+
+.main__vrv-vrf__video{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.main__vrv-vrf__video-text p{
+    color: 2c3138;
+    padding-bottom: 20px;
+    display: block;
+}
+
+.main__vrv-vrf__video-text ul{
+    color: #61656a;
+    display: block;
+    padding-top: 20px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.main__vrv-vrf__video-item{
+    min-width: 600px;
+    margin-left: 20px;
+}
+
+.main__vrv-vrf__video-text ul li{
+    padding-bottom: 20px;
+}
+
+.main__vrv-vrf-photo{
+    position: relative;
+}
+
+.main__vrv-vrf-photo-vrv{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+.main__h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e6ed5;
+    margin: 60px 0 20px 0;
+}
+
+.main__vrv-vrf__problems-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__vrv-vrf__problems-items li{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+}
+
+.main__vrv-vrf__problems-items span{
+    font-weight: bold;
+}

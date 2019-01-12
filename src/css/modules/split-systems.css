@@ -1,0 +1,95 @@
+.main__split__head{
+    color: #f26522;
+    font-size: 0.7em;
+}
+
+.main__split__menu a{
+    color: #2e6ed5;
+    padding: 5px 25px;
+    border: 1px solid #2e6ed5;
+    border-right: 5px;
+    font-weight: bold;
+    margin: 3px;
+}
+
+.main__split__blocks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.main__split__systems__filters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main__split__systems__filters-item{
+    display: flex;
+    align-items: center;
+    padding: 3px;
+    border: 1px solid #d9d9d9;
+}
+
+.main__split__systems__filters__prise, .main__split__systems__filters__manufacturer, .main__split__systems__filters__numbers{
+    margin-left: 5px;
+}
+
+.main__split__systems-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/*main__split__systems end*/
+
+.aside__split__filters{
+    order: -1;
+    width: 500px;
+    margin-right: 20px;
+}
+
+.aside__split__filters__prise, .aside__split__filters__manufacture, .aside__split__filters__area, .aside__split__filters__inverter, .aside__split__filters__modes, .aside__split__filters__color{
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 10px;
+}
+
+.aside__split__filters__prise a{
+    background-color: #2e6ed5;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.aside__split__filters__head{
+    font-weight: bold;
+}
+
+.aside__split__filters__manufacture__checkbox input{
+    margin: 10px 0;
+}
+
+.aside__split__filters__manufacture__checkbox samp{
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+.aside__split__filters__area, .aside__split__filters__inverter, .aside__split__filters__modes, .aside__split__filters__color{
+    display: flex;
+    align-items: center;
+}
+
+.main__split__systems-item{
+    flex-basis: calc(30% - 10px);
+}
+
+.aside__card-product-h3{
+    margin: 60px 0 20px 0;
+}
+
+.aside__card-product-h3 span{
+    color: #f26522;
+}

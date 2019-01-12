@@ -1,7 +1,7 @@
-header
-{
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+/*header
+{*/
+/*    position: -webkit-sticky; /* Safari */
+/*    position: sticky;
     top: 0;
     background-color:white;
 }
@@ -22,7 +22,7 @@ header>nav
     left: 0;
     box-sizing: border-box;
     border-radius: 5px;
-}
+}*/
 
 .head__top-line{
     background-color: #f9f9f9;
@@ -39,6 +39,25 @@ header>nav
     padding: 10px 0;
     margin: 0 auto;
 }
+
+.head__top-line:after{
+    content: "";
+    height: 100%;
+    width: 100vw;
+    display: block;
+    background-color: inherit;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    margin: auto;
+    left: -50vw;
+    right: -50vw;
+}
+
+header{
+    position: relative;
+}
+
 .head__top-line__delivery, .head__top-line__email, .head__top-line__login, .head__top-line__working-hours, .head__top-line__search{
     display: -webkit-box;
     display: -ms-flexbox;

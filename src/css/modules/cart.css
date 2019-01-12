@@ -1,0 +1,144 @@
+.main__cart__h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.main__cart__items{
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid #d9d9d9;
+}
+
+.main__cart-img{
+    width: 180px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.main__cart-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.main__cart__items-text span{
+    color: #7a7a7a;
+}
+
+.main__cart__items-h2{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.main__cart__items-quantity{
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+}
+
+.main__cart__items-quantity output{
+    font-size: 1.2em;
+    margin: 0 5px;
+}
+
+.main__cart__items-prise{
+    color: #f26522;
+    margin-right: 50px;
+}
+
+.main__cart__items-prise, .main__cart__items-prise2, .main__cart__items__delivery-prise, .main__cart__items__delivery-prise2{
+    font-size: 1.4em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.main__cart__items__delivery{
+    padding-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__cart__items__delivery-text{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.main__cart__items__delivery-text span{
+    color: #7a7a7a;
+}
+
+.main__cart__items__delivery-text a{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 5px 30px;
+    color: #f26522;
+    border: 1px solid #f26522;
+    margin-top: 5px;
+}
+
+.main__cart__items__delivery-quantity{
+    display: flex;
+    align-items: center;
+}
+
+.main__cart__items__delivery-quantity output{
+    font-size: 1.2em;
+    padding: 0 5px;
+}
+
+.main__cart__items__delivery-prise{
+    color: #f26522;
+}
+
+.main__cart__total{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #e9e9e9;
+}
+
+.main__cart__total-items{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main__cart__total-quantity, .main__cart__total-prise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.main__cart__total-quantity output, .main__cart__total-prise output{
+    color: #2e6ed5;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.main__cart__total-quantity span, .main__cart__total-prise span{
+    color: #7a7a7a;
+}
+
+.main__cart__total-button{
+    font-weight: bold;
+    padding: 16px 50px;
+    color: #ffffff;
+    background-color: #f26522;
+    margin: 10px;
+}
+
+.main__cart__payment{
+    font-weight: bold;
+}
+
+.main__cart__payment-options{
+    color: #7a7a7a;
+}
+
+.main__cart__payment-text{
+    margin: 20px 10px 60px 0;
+}

@@ -1,34 +1,20 @@
 .footer{
-    display: flex;
-    flex-wrap: wrap;
     background-color: #222222;
     padding: 40px 0 10px 0;
     color: #ffffff;
     margin-top: 25px;
-    position: relative;
 }
 
 .footer__general{
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
-    position: relative;
 }
 
-/*
-.footer:after{
-    content: "";
-    height: 100%;
-    width: 100vw;
-    display: block;
-    background-color: inherit;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    margin: auto;
-    left: -50vw;
-    right: -50vw;
+.footer__general-nav-block{
+    display: flex;
+    flex-wrap: wrap;
 }
-*/
 
 .footer__head{
     text-transform: uppercase;
@@ -47,17 +33,27 @@
     margin-left: 50px;
 }
 
-.footer__contacts{
-    margin-left: 200px;
-}
-
 .footer__contacts__phone{
     margin-bottom: 60px;
 }
 
+.footer__contacts__phone-items{
+    display: flex;
+    align-items: center;
+    margin-left: -10px;
+}
+.footer__contacts__phone__icon{
+    fill: #ffffff;
+    font-size: 3em;
+}
 .footer__contacts__phone-numbers{
-    font-size: 1.2em;
+    padding-left: 5px;
+}
+.footer__contacts__phone-numbers address{
     font-weight: bold;
+    font-size: 1.2em;
+    border-left: 1px solid #7a7a7a;
+    padding: 0 10px;
 }
 
 .footer__call-my{
@@ -81,9 +77,9 @@
 .footer__base{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 50px;
-    min-width: 1070px;
 }
 
 .footer__base small{
@@ -100,4 +96,57 @@
 
 .footer__base__yandex_market img{
     margin-left: 10px;
+}
+
+/*footer end*/
+
+@media screen and (max-width: 900px){
+    .footer__contacts{
+        margin-top: 10px;
+    }
+
+    .footer__general{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .footer__base{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .footer__base__social{
+        margin: 10px 0;
+    }
+
+    .footer__contacts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__contacts__phone-items{
+        justify-content: center;
+    }footer__general-nav-block
+
+    .footer__contacts__payment{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .footer__general-nav-block{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__conditioners{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .footer__nav{
+        text-align: center;
+    }
 }

@@ -47,8 +47,7 @@
     align-items: center;
     border: 1px solid #bcbcbc;
     padding: 10px;
-    margin: 10px;
-    flex-basis: 23%;
+    flex-basis: calc(25% - 10px);
 }
 
 .main__prise-more{
@@ -174,7 +173,16 @@
     border-top: 1px solid #2e6ed5;
 }
 
+/*main__conditioners end*/
 
+@media screen and (max-width: 1045px){
+    .main__prise{
+        justify-content: center;
+    }
 
-
+    .main__prise-item{
+        flex-basis: calc(50% - 30px);
+        margin: 10px;
+    }
+}
 

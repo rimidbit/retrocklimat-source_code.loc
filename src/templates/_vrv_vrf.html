@@ -113,7 +113,12 @@
         </div>
         <div class="main__instruction__bid">
             <form action="bid" method="get" class="main__instruction__bid__form">
-                <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                <div class="main__instruction__bid__form-input">
+                    <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                    <svg class="site-icon form__icon instruction__form__icon" xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                    </svg>
+                </div>
                 <button type="submit" class="main__instruction__bid__button">
                     оставить заявку
                 </button>

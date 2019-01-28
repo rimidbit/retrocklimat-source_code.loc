@@ -1,5 +1,6 @@
 .main__banner{
     background-image: url("../images/bannerbgcopy.png");
+    background-position: center;
     color: #ffffff;
     position: relative;
 }
@@ -270,6 +271,7 @@
 .main__stock__form-items input{
     height: 35px;
     margin-bottom: 15px;
+    padding-left: 10px;
 }
 
 .main__stock__button{
@@ -319,6 +321,7 @@
 
 .main__delivery__head{
     background-image: url("../images/bg-delivery.jpg");
+    background-position: center;
     padding: 5px 0 40px 0;
 }
 
@@ -349,7 +352,6 @@
 
 .main__delivery__guarantee-items{
     display: flex;
-    flex-wrap: wrap;
     margin-top: 60px;
 }
 
@@ -370,7 +372,12 @@
 .main__delivery__guarantee-text h3{
     text-transform: uppercase;
     color: #f26522;
+    padding-top: 20px;
     font-weight: bold;
+}
+
+.main__delivery__guarantee-text li{
+    padding: 5px 0;
 }
 
 .main__delivery__guarantee-img{
@@ -388,6 +395,7 @@
 
 .main__instruction-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 20px;
 }
@@ -419,16 +427,28 @@
 
 .main__instruction__bid__form{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #fff;
     padding: 25px;
     border: 1px solid #eaeaea;
 }
 
+.main__instruction__bid__form-input{
+    position: relative;
+    color: #aaaaaa;
+}
+
 .main__instruction__bid__form-phone{
     flex-grow: 1;
+    padding-left: 10px;
     border: thin solid #cecece;
     border-right: none;
+    height: 40px;
+}
+
+.main__instruction__bid__form-input svg{
+    font-size: 1.4em;
 }
 
 .main__instruction__bid__button{
@@ -450,6 +470,7 @@
 
 .main__instruction__bid-contacts{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
@@ -460,7 +481,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 25px;
+    padding-right: 5px;
+    margin-right: 20px;
     border: 1px solid #eaeaea;
 }
 
@@ -483,7 +505,7 @@
 /*main__instruction end*/
 
 .main__moscow{
-    background-image: url("../images/bg-consultatio-moskovn.jpg");
+    background-image: url("../images/bg-consultatio-moskovn2.jpg");
     padding-bottom: 30px;
 }
 
@@ -496,6 +518,7 @@
     width: 250px;
     float: left;
     margin-right: 15px;
+    margin-bottom: 15px;
 }
 
 .content__conditioner-white__text, .content__conditioner-black__text{
@@ -507,24 +530,31 @@
 .content__conditioner-black{
     width: 250px;
     float: right;
-    margin-left: 15px;
+    margin: 0 5px 15px 15px;
 }
 
 /*main__moscow end*/
 
-.main__photo-items, .main__article-items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main__photo__images a{
-    margin: 0 10px;
+.main__photo-items, .main__photo-slider, .main__photo-slid{
     text-align: center;
 }
 
-.main__photo__images img{
-    width: 200px;
+.main__photo-slider{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.main__photo-slid{
+    max-width: 80%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.main__photo-slid a{
+    margin: 0 10px;
+    display: inline-block;
+    max-width: calc(25% - 24px);
 }
 
 .main__photo__button{
@@ -537,12 +567,32 @@
 
 /*main__photo end*/
 
-.main__article__item a{
-    margin: 0 10px;
+.main__article-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.main__article__item img{
-    width: 300px;
+.main__article-block-photo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__article__item{
+    position: relative;
+    margin: 0 10px;
+    flex-basis: calc(33% - 20px);
+}
+
+.main__article__item p{
+    color: #ffffff;
+    background-color: #2e6ed5;
+    padding: 10px 15px;
+    position: absolute;
+    bottom: 20px;
+    left: -5px;
+    box-shadow: -1px 0 10px -1px #2e6ed5;
 }
 
 .main__article__button{
@@ -553,6 +603,10 @@
     padding: 15px 50px;
     border: 1px solid #f26522;
     margin: 40px 0 60px 0;
+}
+
+.main__article__button, .main__photo__button{
+    box-shadow: 0 0 15px 1px #f26522,  0 0 10px inset;
 }
 
 /*main__article end*/
@@ -566,7 +620,7 @@
 
 .main__consultation{
     background-image: url("../images/bg-consultation2.jpg");
-    /*background-size: auto auto;*/
+    background-position: center;
 }
 
 .main__consultation__form{
@@ -588,9 +642,22 @@
     margin-top: 15px;
 }
 
+.main__consultation__form__input{
+    position: relative;
+    color: #aaaaaa;
+}
+
 .main__consultation__form-items input{
     height: 35px;
+    padding-left: 10px;
     margin-bottom: 15px;
+}
+
+.form__icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    fill: #aaaaaa;
 }
 
 .main__consultation__button{
@@ -771,5 +838,78 @@
         flex-basis: calc(50% - 10px);
         box-sizing: border-box;
         margin: 10px 5px;
+    }
+}
+
+@media screen and (max-width: 965px){
+    .main__delivery__guarantee-items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .main__delivery__guarantee-img{
+        height: auto;
+        margin-top: 15px;
+    }
+
+    .main__delivery__guarantee-text{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .main__instruction-items{
+        justify-content: space-around;
+    }
+
+    .main__instruction-item{
+        flex-basis: calc(50% - 30px);
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 525px){
+    .main__instruction-item {
+        flex-basis: calc(100% - 30px);
+    }
+}
+
+@media screen and (max-width: 830px){
+    .main__instruction__bid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__instruction__bid span{
+        margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .main__instruction__bid-contacts{
+        flex-direction: column;
+    }
+
+    .main__instruction__bid-phones{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 925px){
+    .main__article__item{
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 620px){
+    .main__article-block-photo .main__article__item{
+        flex-basis: calc(100% - 20px);
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .main__instruction__bid__form{
+        flex-direction: column;
     }
 }

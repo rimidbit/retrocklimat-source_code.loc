@@ -69,4 +69,38 @@
 
 .main__vrv-vrf__problems-items span{
     font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.main__vrv-vrf__problems-icon{
+    fill: #2e6ed5;
+    margin: 0 5px 0 10px;
+}
+
+@media screen and (max-width: 845px){
+    .main__vrv-vrf__problems-items, .main__vrv-vrf__video{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__vrv-vrf__video-item{
+        min-width: auto;
+        margin-left: 0;
+        order: -1;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1060px){
+    .main__vrv-vrf-photo-vrv{
+        position: relative;
+    }
+
+    .main__vrv-vrf-photo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

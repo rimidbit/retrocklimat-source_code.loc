@@ -6,20 +6,40 @@
 
 .main__cart__items{
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
     border: 1px solid #d9d9d9;
 }
 
 .main__cart-img{
     width: 180px;
-    padding-top: 20px;
-    padding-left: 20px;
+}
+
+.main__cart__items__delivery-empty{
+    width: 175px;
 }
 
 .main__cart-item{
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.main__cart__icon{
+    font-size: 0.8em;
+    fill: #d9d9d9;
+}
+
+.main__cart__items-text{
+    width: 300px;
+}
+
+.main__cart__items__delivery-text{
+    width: 295px;
 }
 
 .main__cart__items-text span{
@@ -32,37 +52,36 @@
 }
 
 .main__cart__items-quantity{
-    margin: 0 50px;
     display: flex;
     align-items: center;
 }
 
 .main__cart__items-quantity output{
     font-size: 1.2em;
-    margin: 0 5px;
 }
 
 .main__cart__items-prise{
     color: #f26522;
-    margin-right: 50px;
 }
 
 .main__cart__items-prise, .main__cart__items-prise2, .main__cart__items__delivery-prise, .main__cart__items__delivery-prise2{
     font-size: 1.4em;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    margin: 10px;
 }
 
 .main__cart__items__delivery{
-    padding-left: 60px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 10px 20px;
 }
 
 .main__cart__items__delivery-text{
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding: 15px 0;
 }
 
@@ -96,6 +115,7 @@
 
 .main__cart__total{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
     background-color: #e9e9e9;
@@ -103,6 +123,7 @@
 
 .main__cart__total-items{
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
@@ -110,6 +131,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 5px 25px;
 }
 
@@ -141,4 +163,28 @@
 
 .main__cart__payment-text{
     margin: 20px 10px 60px 0;
+}
+
+@media screen and (max-width: 980px){
+    .main__cart__items__delivery, .main__cart-item{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .main__cart__items__delivery-text, .main__cart__items-text{
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 705px){
+    .main__cart__total{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 470px){
+    .main__cart__total-items{
+        justify-content: center;
+    }
 }

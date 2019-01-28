@@ -1,4 +1,37 @@
-.main__contacts__phone{
+.main__contacts-line{
+    background-color: #f9f9f9;
+}
+
+.main__contacts__phone, .main__contacts__delivery, .main__contacts__email, .main__contacts__working-hours{
     display: flex;
     align-items: center;
+    margin: 0 10px;
+}
+
+.main__contacts-items{
+    min-height: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 910px){
+    .main__contacts__phone, .main__contacts__delivery, .main__contacts__email, .main__contacts__working-hours{
+        margin: 0 10px 10px 10px;
+        justify-content: center;
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media screen and (max-width: 625px){
+    .main__contacts-items{
+        justify-content: center;
+    }
+
+    .main__contacts__phone, .main__contacts__delivery, .main__contacts__email, .main__contacts__working-hours{
+        flex-basis: calc(100% - 20px);
+    }
 }

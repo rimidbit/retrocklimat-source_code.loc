@@ -21,18 +21,46 @@
         <div class="main__split__blocks">
             <div class="main__split__systems">
                 <div class="main__split__systems__filters">
-                    <span class="main__split__systems__filters-item">По цене (возрастанию)
-                        <a href="#"  class="main__split__systems__filters__prise">
-                            <img src="img/arow-right.png" alt="#"></a>
-                    </span>
-                    <span class="main__split__systems__filters-item">Показать 1 - 12
-                        <a href="#"  class="main__split__systems__filters__numbers">
-                            <img src="img/arow-right.png" alt="#"></a>
-                    </span>
-                    <span class="main__split__systems__filters-item">Производители
-                        <a href="#"  class="main__split__systems__filters__manufacturer">
-                            <img src="img/arow-right.png" alt="#"></a>
-                    </span>
+                    <div class="main__split__systems__filters__item">
+                        <span>По цене (возрастанию)</span>
+                        <a href="#"  class="main__split__systems__filters__select">
+                            <svg class="site-icon filters__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main__split__systems__filters__item">
+                        <span>Показать 1 - 12</span>
+                        <a href="#"  class="main__split__systems__filters__select">
+                            <svg class="site-icon filters__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main__split__systems__filters__item">
+                        <span>Производители</span>
+                        <a href="#"  class="main__split__systems__filters__select">
+                            <svg class="site-icon filters__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="main__split__systems__filters-nav-pages">
+                        <a class="filters-nav-pages__button" href="#">
+                            <svg class="site-icon nav-pages__icon nav-pages__icon-left" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                        <a class="filters-nav-pages__number" href="#">1</a>
+                        <a class="filters-nav-pages__number" href="#">2</a>
+                        <a class="filters-nav-pages__number" href="#">3</a>
+                        <a class="filters-nav-pages__number" href="#">8</a>
+                        <a class="filters-nav-pages__button" href="#">
+                            <svg class="site-icon nav-pages__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
                 <div class="main__split__systems-items">
                     <figure class="main__prise-item main__split__systems-item">
@@ -401,20 +429,42 @@
                 <div class="aside__split__filters__prise">
                     <span>Цена.руб</span>
                     <img src="img/progress-bar.png" alt="#">
-                    <a href="#">применить</a>
                     <form class="aside__split__filters__prise__checkbox" method="post" action="input5.php">
-                        <input type="checkbox" name="option1" value="a1">Со скидкой<br>
-                        <input type="checkbox" name="option2" value="a2">С бесплатной доставкой<br>
+                        <div class="aside__split__filters__prise-active">
+                            <button type="submit" class="prise-button">
+                                применить
+                            </button>
+                            <span class="prise-start">12000</span>
+                            <span class="prise-dash">-</span>
+                            <input name="stock-phone" placeholder="100 000" type="prise" class="prise-before">
+                            <span class="prise-before-item">до</span>
+                        </div>
+                        <div class="prise-checkbox">
+                            <input type="checkbox" name="option1" value="a1"><span>Со скидкой</span>
+                        </div>
+                        <div class="prise-checkbox">
+                            <input type="checkbox" name="option2" value="a2"><span>С бесплатной доставкой</span>
+                        </div>
                     </form>
                 </div>
                 <div class="aside__split__filters__manufacture">
                     <h2 class="aside__split__filters__head">Производитель</h2>
                     <form class="aside__split__filters__manufacture__checkbox" method="post" action="input5.php">
-                        <input type="checkbox" name="option1" value="a1"><span>Berloni</span><br>
-                        <input type="checkbox" name="option2" value="a2"><span>Bosch</span><br>
-                        <input type="checkbox" name="option3" value="a3"><span>Caso</span><br>
-                        <input type="checkbox" name="option4" value="a4"><span>Colet</span><br>
-                        <input type="checkbox" name="option5" value="a5"><span>De’Longhi</span><br>
+                        <div class="manufacture__checkbox">
+                            <input type="checkbox" name="option1" value="a1"><span>Berloni</span>
+                        </div>
+                        <div class="manufacture__checkbox">
+                            <input type="checkbox" name="option2" value="a2"><span>Bosch</span>
+                        </div>
+                        <div class="manufacture__checkbox">
+                            <input type="checkbox" name="option3" value="a3"><span>Caso</span>
+                        </div>
+                        <div class="manufacture__checkbox">
+                            <input type="checkbox" name="option4" value="a4"><span>Colet</span>
+                        </div>
+                        <div class="manufacture__checkbox">
+                            <input type="checkbox" name="option5" value="a5"><span>De’Longhi</span>
+                        </div>
                     </form>
                 </div>
                 <div class="aside__split__filters__area">

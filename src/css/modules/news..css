@@ -1,5 +1,6 @@
 .main__news__item, .main__stock-sale-general__item{
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
 
@@ -30,8 +31,21 @@
     color: #f26522;
     border: 1px solid #f26522;
     margin-top: 10px;
+    display: inline-block;
 }
 
 .main__stock-sale-general__item img{
     max-height: 200px;
+}
+
+@media screen and (max-width: 920px){
+    .main__news__item, .main__stock-sale-general__item{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__news__item-text, .main__stock-sale-general__item-text{
+        margin: 10px 0 20px 0;
+        text-align: center;
+    }
 }

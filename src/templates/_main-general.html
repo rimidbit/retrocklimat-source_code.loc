@@ -236,8 +236,18 @@
             <div class="main__catalog__consultation">
                 <span>Получите<br>консультацию<br>менеджера<br>бесплатно</span>
                 <form action="search" method="get" class="main__catalog__consultation__form">
-                    <input name="s" placeholder="Ваше имя" type="search" class="main__catalog__consultation__form-name">
-                    <input name="s" placeholder="Ваш телефон" type="search" class="main__catalog__consultation__form-phone">
+                    <div class="main__consultation__form__input">
+                        <input class="main__stock__form-name" name="stock-name" placeholder="Ваше имя" type="stock">
+                        <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                        </svg>
+                    </div>
+                    <div class="main__consultation__form__input">
+                        <input name="stock-phone" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                        <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                        </svg>
+                    </div>
                     <button type="submit" class="main__catalog__consultation__button">
                         получить консультацию
                     </button>
@@ -260,8 +270,18 @@
                 <div class="main__stock__form">
                     <p>ХОТИТЕ <br>ПОЛУЧИТЬ <br>СКИДКУ ПРЯМО <br>СЕЙЧАС ?</p>
                     <form action="stock" method="get" class="main__stock__form-items">
-                        <input name="s" placeholder="Ваше имя" type="stock" class="main__stock__form-name">
-                        <input name="s" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                        <div class="main__consultation__form__input">
+                            <input class="main__stock__form-name" name="stock-name" placeholder="Ваше имя" type="stock">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                            </svg>
+                        </div>
+                        <div class="main__consultation__form__input">
+                            <input name="stock-phone" placeholder="Ваш телефон" type="stock" class="main__stock__form-phone">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                            </svg>
+                        </div>
                         <button type="submit" class="main__stock__button">
                             хочу !
                         </button>
@@ -362,7 +382,9 @@
                             <li>Условия гарантийного обслуживания</li>
                         </ol>
                     </div>
-                    <img class="main__delivery__guarantee-img" src="images/conditioner-certificate.png" alt="conditioner-certificate">
+                    <div class="main__delivery__guarantee-img">
+                        <img src="images/conditioner-certificate.png" alt="conditioner-certificate">
+                    </div>
                 </div>
             </div>
         </div>
@@ -398,7 +420,12 @@
             </div>
             <div class="main__instruction__bid">
                 <form action="bid" method="get" class="main__instruction__bid__form">
-                    <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                    <div class="main__instruction__bid__form-input">
+                        <input name="s" placeholder="Ваш телефон" type="bid" class="main__instruction__bid__form-phone">
+                        <svg class="site-icon form__icon instruction__form__icon" xmlns="http://www.w3.org/2000/svg">
+                            <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                        </svg>
+                    </div>
                     <button type="submit" class="main__instruction__bid__button">
                         оставить заявку
                     </button>
@@ -435,7 +462,7 @@
                 </div>
                 <div class="main__moscow__content-item clearfix">
                     <img class="content__conditioner-black" src="images/conditioner-1024x737.jpg" alt="conditioner-black">
-                    <p class="content__conditioner-black__text">>Мы работаем напрямую со многими известными производителями, постоянно наращиваем товарооборот с ними, и получаем за это приличные скидки. При этом мы отвечаем за качество предлагаемой нами продукции и полностью уверены в ней. Это прочные, надежные, долговечные и эстетически привлекательные входные двери с продуманной конструкцией и первоклассной фурнитурой – вы точно останетесь довольны.</p>
+                    <p class="content__conditioner-black__text">Мы работаем напрямую со многими известными производителями, постоянно наращиваем товарооборот с ними, и получаем за это приличные скидки. При этом мы отвечаем за качество предлагаемой нами продукции и полностью уверены в ней. Это прочные, надежные, долговечные и эстетически привлекательные входные двери с продуманной конструкцией и первоклассной фурнитурой – вы точно останетесь довольны.</p>
                     <p class="content__conditioner-black__text">Наш интернет-магазин предлагает входные двери по приятным ценам в Москве. Мы заботимся своих о клиентах, поэтому вы можете сделать заказ в режиме онлайн, для чего нужно заполнить небольшую форму. Кроме дверей мы предлагаем также их доставку и профессиональный монтаж на максимально выгодных условиях. Десятки производителей, сотни моделей дверей различного назначения, высококлассные услуги и послегарантийное обслуживание – все это и многое другое для вас. Обращайтесь, и вы никогда об этом не пожалеете – это мы гарантируем!</p>
                 </div>
             </div>
@@ -445,11 +472,13 @@
         <div class="container">
             <h2 class="h2">ФОТО УСТАНОВЛЕННЫХ КОНДИЦИОНЕРОВ</h2>
             <div class="main__photo-items">
-                <div class="main__photo__images">
-                    <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
-                    <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
-                    <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
-                    <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
+                <div class="main__photo-slider">
+                    <div class="main__photo-slid">
+                        <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
+                        <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
+                        <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
+                        <a href="#"><img src="images/conditioner-set.jpg" alt="conditioner-set"></a>
+                    </div>
                 </div>
                 <a class="main__photo__button" href="#">все фото</a>
             </div>
@@ -459,10 +488,25 @@
         <div class="container">
             <h2 class="h2">СТАТЬИ</h2>
             <div class="main__article-items">
-                <div class="main__article__item">
-                    <a href="#"><img src="images/article.jpg" alt=""></a>
-                    <a href="#"><img src="images/article.jpg" alt=""></a>
-                    <a href="#"><img src="images/article.jpg" alt=""></a>
+                <div class="main__article-block-photo">
+                    <div class="main__article__item">
+                        <a href="#">
+                            <img src="images/article.jpg" alt="">
+                            <p>Как установить кондиционер своими <br>руками?</p>
+                        </a>
+                    </div>
+                    <div class="main__article__item">
+                        <a href="#">
+                            <img src="images/article.jpg" alt="">
+                            <p>Как установить кондиционер своими <br>руками?</p>
+                        </a>
+                    </div>
+                    <div class="main__article__item">
+                        <a href="#">
+                            <img src="images/article.jpg" alt="">
+                            <p>Как установить кондиционер своими <br>руками?</p>
+                        </a>
+                    </div>
                 </div>
                 <a class="main__article__button" href="#">все статьи</a>
             </div>
@@ -473,9 +517,19 @@
             <div class="main__consultation-items">
                 <div class="main__consultation__form">
                     <p>ПОЛУЧИТЬ <br>КОНСУЛЬТАЦИЮ <br>МЕНЕДЖЕРА <br>БЕСПЛАТНО</p>
-                    <form action="stock" method="get" class="main__consultation__form-items">
-                        <input name="s" placeholder="Ваше имя" type="stock" class="main__consultation__form-name">
-                        <input name="s" placeholder="Ваш телефон" type="stock" class="main__consultation__form-phone">
+                    <form action="consult" method="get" class="main__consultation__form-items">
+                        <div class="main__consultation__form__input">
+                            <input class="main__consultation__form-name" name="s" placeholder="Ваше имя" type="consult">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#man-user"></use>
+                            </svg>
+                        </div>
+                        <div class="main__consultation__form__input">
+                            <input name="s" placeholder="Ваш телефон" type="consult" class="main__consultation__form-phone">
+                            <svg class="site-icon form__icon" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/svg/svg-symbols.svg#smartphone"></use>
+                            </svg>
+                        </div>
                         <button type="submit" class="main__consultation__button">
                             получить
                         </button>
